@@ -2,9 +2,15 @@
     <string name="app_name">Be Safe</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
-    <string name="email">email</string>
+    <string name="email">E-mail</string>
     <string name="storage_permission_rationale_title">Storage permission required</string>
     <string name="storage_permition_rationale_message">In order to take a picture, you must grant this permission!</string>
     <string name="storage_permission_denied_message">Storage permission is required in order to take a photo with the camera</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
+    <string name="borrar">Borrar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="ingrese_su_contrase_a">Ingrese su contraseña</string>
+    <string name="ingrese_su_correo_electronico">Ingrese su correo electronico</string>
+    <string name="verifique_su_contrase_a">Verifique su Contraseña</string>
 
 </resources>

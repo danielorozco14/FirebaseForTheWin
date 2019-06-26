@@ -1,8 +1,19 @@
 package com.example.besafe.Activity
 
-import androidx.appcompat.app.AppCompatActivity
+import android.Manifest
+import android.app.Activity
+import android.content.ContentValues
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.example.besafe.R
+import com.facebook.drawee.backends.pipeline.Fresco
+import com.facebook.imagepipeline.common.ResizeOptions
+import com.facebook.imagepipeline.request.ImageRequestBuilder
 import com.karumi.dexter.Dexter
 import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionDeniedResponse
@@ -10,21 +21,7 @@ import com.karumi.dexter.listener.PermissionGrantedResponse
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.single.PermissionListener
 import kotlinx.android.synthetic.main.activity_foto.*
-import android.Manifest
-import android.app.Activity
-import android.content.ContentValues
-import android.content.Intent
-import android.net.Uri
-import android.provider.MediaStore
-import android.util.Log
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
-import com.facebook.drawee.backends.pipeline.Fresco
-import com.facebook.imagepipeline.common.ResizeOptions
-import com.facebook.imagepipeline.request.ImageRequestBuilder
 import java.io.File
-
-
 
 
 class Foto : AppCompatActivity() {
@@ -38,7 +35,7 @@ class Foto : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_foto)
         btnfoto.setOnClickListener{permisos()}
-        Log.d("BMF",mCurrentPhotoPath)
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

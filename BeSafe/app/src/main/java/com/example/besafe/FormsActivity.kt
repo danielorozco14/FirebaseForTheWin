@@ -3,7 +3,6 @@ package com.example.besafe
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
@@ -75,16 +74,14 @@ class FormsActivity : AppCompatActivity() {
             arrayNumber.add(arrayNumber.size, i)
         }
 
-        Question = Question(arrayString, arrayNumber, 1, "ontas")
+        /*Question = Question(arrayString, arrayNumber, 1, "ontas")
 
         db.collection("formq").add(formQ).addOnSuccessListener { documentReference ->
-            Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
             db.collection("formq").document(documentReference.id).collection("question").add(Question)
         }
             .addOnFailureListener { e ->
-                Log.w(TAG, "Error adding document", e)
             }
-
+*/
 
         //loadInfo()
 
@@ -120,10 +117,8 @@ class FormsActivity : AppCompatActivity() {
                 .document("persona_${cont}")//ID DEL DOCUMENTO
                 .set(user)
                 .addOnSuccessListener { documentReference ->
-                    Log.d(TAG, "DocumentSnapshot added ")
                 }
                 .addOnFailureListener { e ->
-                    Log.w(TAG, "Error adding document", e)
                 }
         }
 
@@ -138,10 +133,8 @@ class FormsActivity : AppCompatActivity() {
                         var text_Test = findViewById<TextView>(R.id.text_Test1)
                         text_Test.text = first
                     } else {
-                        Log.d(TAG, "No existe el documento")
                     }
                 } else {
-                    Log.d(TAG, "Hubo fallo en ", task.exception)
                 }
             })
         }
@@ -151,7 +144,6 @@ class FormsActivity : AppCompatActivity() {
             var mDocRef = db.document("users/persona_1")
             mDocRef.addSnapshotListener(this, EventListener<DocumentSnapshot> { snap, e ->
                 if (e != null) {
-                    Log.e(TAG, "error", e)
                 } else {
                     var first = snap?.getString("first") + "\n" +
                             snap?.getString("last") + "\n" + snap?.get("born")

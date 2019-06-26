@@ -13,7 +13,7 @@
             >
         <activity android:name=".FormsActivity">
         </activity>
-        <activity android:name=".RegistroActivity">
+        <activity android:name=".RegistroActivity" android:noHistory="true">
         </activity>
         <activity android:name=".BeSafe">
         </activity>
