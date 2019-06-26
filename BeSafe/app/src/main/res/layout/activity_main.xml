@@ -106,7 +106,7 @@
                 android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="8dp"/>
         <TextView
-                android:text="Olvidaste tu contraseña"
+                android:text="@string/u_olvidaste_tu_contrase_a_u"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/forgottenpassword"

@@ -15,5 +15,6 @@
     <string name="ingrese_su_contrase_a">Ingrese su contraseña</string>
     <string name="ingrese_su_correo_electronico">Ingrese su correo electronico</string>
     <string name="verifique_su_contrase_a">Verifique su Contraseña</string>
+    <string name="u_olvidaste_tu_contrase_a_u"><u>Olvidaste tu contraseña</u></string>
 
 </resources>
