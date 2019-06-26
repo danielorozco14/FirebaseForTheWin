@@ -66,6 +66,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414834592750:android:26ed139d1f7c3b6c",
+        "android_client_info": {
+          "package_name": "com.visuallatam.besafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414834592750-g5u1lavtrskiufanac0ko2fk4ju95en2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTbv9ph0RmU2FaeD2Nh5CeC82YyToM7s0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414834592750-g5u1lavtrskiufanac0ko2fk4ju95en2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

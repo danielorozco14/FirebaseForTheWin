@@ -1,11 +1,11 @@
-package com.example.besafe.data.viewModel
+package com.visuallatam.besafe.data.viewModel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.besafe.data.entities.Users
-import com.example.besafe.data.firebaseRepository.FirebaseRepository
+import com.visuallatam.besafe.data.entities.Users
+import com.visuallatam.besafe.data.firebaseRepository.FirebaseRepository
 import com.google.firebase.firestore.EventListener
 import com.google.firebase.firestore.QuerySnapshot
 

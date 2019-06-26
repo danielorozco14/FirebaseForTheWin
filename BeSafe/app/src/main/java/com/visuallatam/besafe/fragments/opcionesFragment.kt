@@ -1,18 +1,14 @@
-package com.example.besafe.fragments
+package com.visuallatam.besafe.fragments
 
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
-import com.example.besafe.R
-import com.example.besafe.adapters.firestoreAdapter.FirestoreUsersAdapter
-import com.example.besafe.data.entities.Users
-import com.example.besafe.data.viewModel.FirestoreViewModel
+import com.visuallatam.besafe.R
+import com.visuallatam.besafe.data.entities.Users
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
@@ -40,7 +36,6 @@ class opcionesFragment : Fragment() {
         //Adapter = FirestoreUsersAdapter(options)
         //recyclerView.adapter=Adapter
 
-        Log.d("FIRESTORE","SE CREO EL FRAGMENTO")
         return view
     }
 

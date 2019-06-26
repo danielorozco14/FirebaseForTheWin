@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.besafe">
+          package="com.visuallatam.besafe">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
             android:allowBackup="true"
@@ -9,19 +9,19 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
-            android:name=".Activity.Application"
+            android:name="com.visuallatam.besafe.Activity.Application"
             >
-        <activity android:name=".FormsActivity">
+        <activity android:name="com.visuallatam.besafe.FormsActivity">
         </activity>
-        <activity android:name=".RegistroActivity" android:noHistory="true">
+        <activity android:name="com.visuallatam.besafe.RegistroActivity" android:noHistory="true">
         </activity>
-        <activity android:name=".BeSafe">
+        <activity android:name="com.visuallatam.besafe.BeSafe">
         </activity>
 
-        <activity android:name=".Activity.Foto">
+        <activity android:name="com.visuallatam.besafe.Activity.Foto">
         </activity>
         <activity
-                android:name=".MainActivity"
+                android:name="com.visuallatam.besafe.MainActivity"
                 android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

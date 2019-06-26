@@ -1,7 +1,7 @@
-package com.example.besafe.data.firebaseRepository
+package com.visuallatam.besafe.data.firebaseRepository
 
 import android.util.Log
-import com.example.besafe.data.entities.Users
+import com.visuallatam.besafe.data.entities.Users
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.CollectionReference

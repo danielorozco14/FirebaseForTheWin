@@ -1,4 +1,4 @@
-package com.example.besafe.Activity
+package com.visuallatam.besafe.Activity
 
 import android.Manifest
 import android.app.Activity
@@ -10,7 +10,7 @@ import android.provider.MediaStore
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.besafe.R
+import com.visuallatam.besafe.R
 import com.facebook.drawee.backends.pipeline.Fresco
 import com.facebook.imagepipeline.common.ResizeOptions
 import com.facebook.imagepipeline.request.ImageRequestBuilder

@@ -1,29 +1,23 @@
-package com.example.besafe
+package com.visuallatam.besafe
 
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.besafe.adapters.firestoreAdapter.FirestoreUsersAdapter
-import com.example.besafe.data.entities.FormQ
-import com.example.besafe.data.entities.Question
-import com.example.besafe.data.entities.Users
-
-import com.example.besafe.fragments.opcionesFragment
-import com.firebase.ui.firestore.FirestoreRecyclerAdapter
-
-import com.firebase.ui.firestore.FirestoreRecyclerOptions
+import com.visuallatam.besafe.adapters.firestoreAdapter.FirestoreUsersAdapter
+import com.visuallatam.besafe.data.entities.FormQ
+import com.visuallatam.besafe.fragments.opcionesFragment
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.*
+import com.google.firebase.firestore.DocumentSnapshot
+import com.google.firebase.firestore.EventListener
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.QuerySnapshot
 import kotlinx.android.synthetic.main.activity_forms.*
 
 
@@ -71,7 +65,7 @@ class FormsActivity : AppCompatActivity() {
 
         val formQ = FormQ(uidtoken, 10)
 
-        val arrayString: ArrayList<String> = ArrayList()
+        /*val arrayString: ArrayList<String> = ArrayList()
         val arrayNumber: ArrayList<Int> = ArrayList()
         val Question: Question
 
@@ -79,20 +73,19 @@ class FormsActivity : AppCompatActivity() {
             arrayString.add(arrayString.size, i.toString())
             arrayNumber.add(arrayNumber.size, i)
         }
-
         Question = Question(arrayString, arrayNumber, 1, "ontas")
 
         db.collection("formq").add(formQ).addOnSuccessListener { documentReference ->
-            Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+           // Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
             db.collection("formq").document(documentReference.id).collection("question").add(Question)
         }
             .addOnFailureListener { e ->
-                Log.w(TAG, "Error adding document", e)
+               // Log.w(TAG, "Error adding document", e)
             }
 
 
         //loadInfo()
-
+*/
     }
 
 
@@ -127,10 +120,10 @@ class FormsActivity : AppCompatActivity() {
             .add(user)//.document("persona_${aux}")//ID DEL DOCUMENTO
             //.set(user)
             .addOnSuccessListener { documentReference ->
-                Log.d(TAG, "DocumentSnapshot added ")
+                //Log.d(TAG, "DocumentSnapshot added ")
             }
             .addOnFailureListener { e ->
-                Log.w(TAG, "Error adding document", e)
+                //Toast.makeText(TAG, "Error adding document", e)
             }
     }
 
@@ -159,12 +152,12 @@ class FormsActivity : AppCompatActivity() {
             .addOnCompleteListener (OnCompleteListener<QuerySnapshot>{
                 if(it.isSuccessful){
                     for (doc:DocumentSnapshot in it.result!!){
-                        Log.d(TAG,"ESTA WEA NO CUENTA"+doc.id)
+
                        aux= cont++
-                        Log.d(TAG,"VALOR DE CONTADOR EN LOAD INFO"+cont.toString())
+                        //Toast.makeText(this,"VALOR DE CONTADOR EN LOAD INFO"+cont.toString(),Toast.LENGTH_SHORT).show()
                     }
                 }else{
-                    Log.d(TAG,"Error obteniendo documentos"+it.exception)
+                    Toast.makeText(this,"Error obteniendo documentos"+it.exception,Toast.LENGTH_SHORT).show()
                 }
             })
         return aux;
@@ -175,7 +168,7 @@ class FormsActivity : AppCompatActivity() {
         var mDocRef = db.document("users/persona_1")
         mDocRef.addSnapshotListener(this, EventListener<DocumentSnapshot> { snap, e ->
             if (e != null) {
-                Log.e(TAG, "error", e)
+               Toast.makeText(this, "Error",Toast.LENGTH_SHORT).show()
             } else {
                 var first = snap?.getString("first") + "\n" +
                         snap?.getString("last") + "\n" + snap?.get("born")

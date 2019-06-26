@@ -1,4 +1,4 @@
-package com.example.besafe
+package com.visuallatam.besafe
 
 import android.os.Bundle
 import android.view.animation.AnimationUtils

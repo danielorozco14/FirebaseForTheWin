@@ -1,12 +1,12 @@
-package com.example.besafe.adapters.firestoreAdapter
+package com.visuallatam.besafe.adapters.firestoreAdapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.besafe.R
-import com.example.besafe.data.entities.Users
+import com.visuallatam.besafe.R
+import com.visuallatam.besafe.data.entities.Users
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 

@@ -1,4 +1,4 @@
-package com.example.besafe
+package com.visuallatam.besafe
 
 import org.junit.Test
 
