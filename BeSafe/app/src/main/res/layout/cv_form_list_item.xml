@@ -9,6 +9,7 @@
         app:cardBackgroundColor="@color/azulitoClaro"
         android:orientation="vertical"
         app:cardCornerRadius="4dp"
+        android:background="@color/colorPrimary"
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="true">
 

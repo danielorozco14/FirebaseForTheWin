@@ -8,7 +8,7 @@
             android:title="@string/borrar"
             app:showAsAction="ifRoom"/>
     <item
-            android:id="@+id/logout"
+            android:id="@+id/Logout"
             android:icon="@drawable/ic_exit_to_app_black_24dp"
             android:title="@string/cerrar_sesion"
             app:showAsAction="never"/>
