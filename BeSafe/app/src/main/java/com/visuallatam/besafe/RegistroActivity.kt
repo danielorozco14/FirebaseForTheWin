@@ -20,9 +20,9 @@ class RegistroActivity : AppCompatActivity() {
 
     private fun registra() {
 
-        button_registro.setOnClickListener {
-            button_registro.startAnimation(AnimationUtils.loadAnimation(this, R.anim.fadein))
-            var mCorreoRegistro = correo_registro.text.toString()
+        send_forgotten.setOnClickListener {
+            send_forgotten.startAnimation(AnimationUtils.loadAnimation(this, R.anim.fadein))
+            var mCorreoRegistro = correo_forgotten.text.toString()
             var mContraRegistro = contra_registro.text.toString()
             var mVerificar = contra_registro2.text.toString()
             if (mContraRegistro.isNotEmpty() && mCorreoRegistro.isNotEmpty() && mVerificar.isNotEmpty()) {

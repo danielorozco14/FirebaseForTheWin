@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_registrar.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +26,10 @@ class MainActivity : AppCompatActivity() {
 
     fun binder() {
         logea()
+        forgottenpassword.setOnClickListener{
+            startActivity(Intent(this, ForgottenPassword::class.java))
+            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
+        }
         register.setOnClickListener {
             register.startAnimation(AnimationUtils.loadAnimation(this,R.anim.fadein))
             startActivity(Intent(this, RegistroActivity::class.java))

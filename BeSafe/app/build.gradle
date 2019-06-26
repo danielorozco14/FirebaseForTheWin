@@ -10,11 +10,11 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.visuallatam.besafe"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 28
         multiDexEnabled true
-        versionCode 2
-        versionName "2.0"
+        versionCode 3
+        versionName "2.0001"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -54,7 +54,6 @@ dependencies {
 
     implementation 'com.facebook.fresco:fresco:1.4.0'
     implementation 'com.karumi:dexter:4.1.0'
-
 
 
 }
