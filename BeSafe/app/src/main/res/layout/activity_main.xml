@@ -18,7 +18,7 @@
             tools:context=".MainActivity">
 
         <TextView
-                android:layout_width="350dp"
+                android:layout_width="wrap_content"
                 android:textColor="@color/cardview_light_background"
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
@@ -29,7 +29,7 @@
                 android:layout_marginEnd="99dp"
                 android:layout_marginRight="99dp"
                 app:layout_constraintStart_toStartOf="parent"
-                android:drawableTop="@drawable/ic_healing_black_24dp"
+                android:drawableTop="@drawable/ic_healing_green_100dp"
                 android:layout_marginLeft="99dp"
                 android:layout_marginStart="99dp"
                 android:layout_marginTop="70dp"
