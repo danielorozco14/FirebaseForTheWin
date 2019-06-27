@@ -31,7 +31,7 @@
                 android:layout_marginStart="99dp"
                 android:layout_marginTop="32dp"
                 app:layout_constraintTop_toTopOf="parent"
-                android:drawableTop="@drawable/ic_healing_green_150dp"
+                android:drawableTop="@drawable/ic_healing_white_150dp"
                 android:text="Be Safe"
                 app:layout_constraintHorizontal_bias="0.503" android:id="@+id/textView5"/>
 
@@ -89,7 +89,7 @@
 
         <Button
                 android:text="@string/login"
-                android:layout_width="240dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/login"
                 android:backgroundTint="@color/common_google_signin_btn_text_dark"
@@ -106,7 +106,7 @@
                 android:text="Register"
                 app:layout_constraintCircleRadius="@dimen/cardview_compat_inset_shadow"
                 app:layout_constraintCircleAngle="@android:integer/config_mediumAnimTime"
-                android:layout_width="240dp"
+                android:layout_width="300dp"
                 android:backgroundTint="@color/common_google_signin_btn_text_dark"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:layout_height="wrap_content"

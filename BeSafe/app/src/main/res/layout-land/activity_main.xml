@@ -19,7 +19,7 @@
 
         <TextView
                 android:layout_width="150dp"
-                android:drawableTop="@drawable/ic_healing_green_150dp"
+                android:drawableTop="@drawable/ic_healing_white_150dp"
                 android:textColor="@color/cardview_light_background"
                 android:layout_height="wrap_content"
                 android:textSize="40sp"

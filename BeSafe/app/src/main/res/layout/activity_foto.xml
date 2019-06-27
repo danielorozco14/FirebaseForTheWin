@@ -33,11 +33,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
+
             android:id="@+id/btnfoto"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.899"
-            app:layout_constraintVertical_bias="0.781" android:focusable="auto" android:layout_marginTop="400dp"/>
+            app:srcCompat="@drawable/ic_add_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="44dp"
+            android:focusable="auto" android:layout_marginBottom="44dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
