@@ -11,9 +11,11 @@
         app:cardCornerRadius="4dp"
         android:background="@color/colorPrimary"
         app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true">
+        app:cardUseCompatPadding="true"
+>
 
     <LinearLayout
+
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:gravity="center"
@@ -30,41 +32,13 @@
                 android:shadowColor="@color/cardview_shadow_start_color"
                 android:outlineAmbientShadowColor="@color/cardview_shadow_start_color"
                 android:outlineSpotShadowColor="@color/cardview_shadow_start_color"
-                android:id="@+id/dummyyy"
+                android:id="@+id/dummyyy1"
                 android:gravity="center"
                 android:textSize="28dp"
                 android:textAlignment="center"
-                android:text="HOLA"    />
-        <TextView
-                android:layout_width="wrap_content"
-                android:textColor="@color/azuloscuro"
-                android:textColorHighlight="@color/cardview_light_background"
-                android:textColorHint="@color/cardview_light_background"
-                android:textColorLink="@color/cardview_light_background"
-                android:shadowColor="@color/cardview_shadow_start_color"
-                android:outlineAmbientShadowColor="@color/cardview_shadow_start_color"
-                android:outlineSpotShadowColor="@color/cardview_shadow_start_color"
-                android:layout_height="wrap_content"
-                android:id="@+id/text_Test2"
-                android:gravity="center"
-                android:textSize="28dp"
-                android:textAlignment="center"
-                android:text="HOLA"    />
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/text_Test3"
-                android:textColor="@color/azuloscuro"
-                android:textColorHighlight="@color/cardview_light_background"
-                android:textColorHint="@color/cardview_light_background"
-                android:textColorLink="@color/cardview_light_background"
-                android:shadowColor="@color/cardview_shadow_start_color"
-                android:outlineAmbientShadowColor="@color/cardview_shadow_start_color"
-                android:outlineSpotShadowColor="@color/cardview_shadow_start_color"
-                android:gravity="center"
-                android:textSize="28dp"
-                android:textAlignment="center"
-                android:text="HOLA"    />
+                android:text="HOLA" />
+
+
 
     </LinearLayout>
 

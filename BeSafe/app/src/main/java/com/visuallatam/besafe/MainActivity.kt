@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         binder()
         if (mAuth.currentUser!=null){
             mAuth.currentUser?.let { mAuth.updateCurrentUser(it) }
-            startActivity(Intent(this, FormsActivity::class.java))
+            startActivity(Intent(this, AllReportsActivity::class.java))
         }
 
     }
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
                 mAuth.signInWithEmailAndPassword(txtemail, txtpassword).addOnCompleteListener (this){
                     if (it.isSuccessful) {
-                        startActivity(Intent(this, FormsActivity::class.java))
+                        startActivity(Intent(this, AllReportsActivity::class.java))
                         overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
                         Toast.makeText(this, "Logged in", Toast.LENGTH_LONG).show()
                     } else {

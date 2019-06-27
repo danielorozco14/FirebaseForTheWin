@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.example.besafe.fragments.opcionesFragment
-import com.visuallatam.besafe.adapters.firestoreAdapter.FirestoreUsersAdapter
+import com.visuallatam.besafe.adapters.firestoreAdapter.FirestoreReportesAdapter
 import com.visuallatam.besafe.data.entities.FormQ
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
@@ -18,6 +18,7 @@ import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.EventListener
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.QuerySnapshot
+import com.visuallatam.besafe.fragments.AfterLoginFragment
 import kotlinx.android.synthetic.main.activity_forms.*
 
 
@@ -31,9 +32,9 @@ class FormsActivity : AppCompatActivity() {
 
 
     var cont=0 //CONTADOR QUE SIRVE PARA INDEXAR EL DOCUMENTO, NOS SERA MAS FACIL OBTENER UN DOCUMENTO ESPECIFICO SI SABEMOS QUE NUMERO TIENE AL FINAL
-    var aux=loadInfo();
+   // var aux=loadInfo();
     //private var adapter :UsersFirestoreRecyclerAdapter?=null
-    lateinit var adapter: FirestoreUsersAdapter
+    lateinit var adapter: FirestoreReportesAdapter
 
 
     var mAuth = FirebaseAuth.getInstance()
@@ -54,7 +55,7 @@ class FormsActivity : AppCompatActivity() {
         val query = db.collection("users").orderBy("first", Query.Direction.DESCENDING)
         val options = FirestoreRecyclerOptions.Builder<Users>().setQuery(query, Users::class.java).build()
         //adapter = UsersFirestoreRecyclerAdapter(options)
-        adapter = FirestoreUsersAdapter(options)
+        adapter = FirestoreReportesAdapter(options)
         recycler_view.adapter = adapter
 
         **/
@@ -124,7 +125,7 @@ class FormsActivity : AppCompatActivity() {
             }
     }
 
-    fun loadInfo() :Int {
+    fun loadInfo() {
         /**
         var mDocRef = db.document("users/persona_1")
         mDocRef.get().addOnCompleteListener(OnCompleteListener<DocumentSnapshot> { task ->
@@ -150,14 +151,14 @@ class FormsActivity : AppCompatActivity() {
                 if(it.isSuccessful){
                     for (doc:DocumentSnapshot in it.result!!){
 
-                       aux= cont++
+                       //aux= cont++
                         //Toast.makeText(this,"VALOR DE CONTADOR EN LOAD INFO"+cont.toString(),Toast.LENGTH_SHORT).show()
                     }
                 }else{
                     Toast.makeText(this,"Error obteniendo documentos"+it.exception,Toast.LENGTH_SHORT).show()
                 }
             })
-        return aux;
+
     }
 
     //TODO ESTA SE IMPLEMENTA EN onStart() para que funcione

@@ -6,15 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.cardview.widget.CardView
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 
-import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.Query
 import com.visuallatam.besafe.R
-import com.visuallatam.besafe.adapters.firestoreAdapter.FirestoreUsersAdapter
+import com.visuallatam.besafe.adapters.firestoreAdapter.FirestoreReportesAdapter
 
 class opcionesFragment : Fragment() {
 
@@ -22,7 +17,7 @@ class opcionesFragment : Fragment() {
         fun newInstance() :opcionesFragment = opcionesFragment()
     }
 
-    private lateinit var Adapter : FirestoreUsersAdapter
+    private lateinit var Adapter : FirestoreReportesAdapter
     var db = FirebaseFirestore.getInstance()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle?): View? {
@@ -38,7 +33,7 @@ class opcionesFragment : Fragment() {
         .setQuery(query, Users::class.java)
         .build()
         //adapter = UsersFirestoreRecyclerAdapter(options)
-        Adapter = FirestoreUsersAdapter(options)
+        Adapter = FirestoreReportesAdapter(options)
         Adapter.notifyDataSetChanged()
         recyclerView.adapter=Adapter
 
