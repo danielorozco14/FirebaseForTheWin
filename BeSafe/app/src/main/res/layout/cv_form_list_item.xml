@@ -30,7 +30,7 @@
                 android:shadowColor="@color/cardview_shadow_start_color"
                 android:outlineAmbientShadowColor="@color/cardview_shadow_start_color"
                 android:outlineSpotShadowColor="@color/cardview_shadow_start_color"
-                android:id="@+id/text_Test1"
+                android:id="@+id/dummyyy"
                 android:gravity="center"
                 android:textSize="28dp"
                 android:textAlignment="center"

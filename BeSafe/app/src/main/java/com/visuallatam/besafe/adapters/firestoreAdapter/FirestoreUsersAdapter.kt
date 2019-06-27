@@ -30,7 +30,7 @@ class FirestoreUsersAdapter internal constructor(options: FirestoreRecyclerOptio
 
     inner class UsersViewHolder internal constructor(private val view: View):RecyclerView.ViewHolder(view){
         internal fun setUsersData(first:String,last:String,born:Int){
-            val textView1= view.findViewById<TextView>(R.id.text_Test1)
+            val textView1= view.findViewById<TextView>(R.id.dummyyy)
             textView1.text=first
             val textView2= view.findViewById<TextView>(R.id.text_Test2)
             textView2.text=last
