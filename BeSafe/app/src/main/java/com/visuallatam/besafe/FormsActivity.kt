@@ -169,7 +169,7 @@ class FormsActivity : AppCompatActivity() {
             } else {
                 var first = snap?.getString("first") + "\n" +
                         snap?.getString("last") + "\n" + snap?.get("born")
-                var text_Test = findViewById <TextView> (R.id.text_Test1)
+                var text_Test = findViewById<TextView>(R.id.dummyyy)
                 text_Test.text = first
             }
         })

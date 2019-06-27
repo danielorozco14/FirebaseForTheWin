@@ -33,11 +33,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-
+            app:elevation="0dp"
             android:id="@+id/btnfoto"
             app:srcCompat="@drawable/ic_add_black_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="44dp"
-            android:focusable="auto" android:layout_marginBottom="44dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="44dp"
+            android:focusable="auto"
+            android:layout_marginBottom="44dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,11 +2,11 @@
 <androidx.cardview.widget.CardView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools" android:id="@+id/cardView"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="@color/azuloscuro"
+        app:cardBackgroundColor="@color/Aquamarine"
         android:orientation="vertical"
         app:cardCornerRadius="4dp"
         android:background="@color/colorPrimary"
@@ -14,7 +14,6 @@
         app:cardUseCompatPadding="true">
 
     <LinearLayout
-            android:id="@+id/name_form"
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:gravity="center"
@@ -24,21 +23,21 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/cardview_light_background"
+                android:textColor="@color/azuloscuro"
                 android:textColorHighlight="@color/cardview_light_background"
                 android:textColorHint="@color/cardview_light_background"
                 android:textColorLink="@color/cardview_light_background"
                 android:shadowColor="@color/cardview_shadow_start_color"
                 android:outlineAmbientShadowColor="@color/cardview_shadow_start_color"
                 android:outlineSpotShadowColor="@color/cardview_shadow_start_color"
-                android:id="@+id/text_Test1"
+                android:id="@+id/dummyyy"
                 android:gravity="center"
                 android:textSize="28dp"
                 android:textAlignment="center"
                 android:text="HOLA"    />
         <TextView
                 android:layout_width="wrap_content"
-                android:textColor="@color/cardview_light_background"
+                android:textColor="@color/azuloscuro"
                 android:textColorHighlight="@color/cardview_light_background"
                 android:textColorHint="@color/cardview_light_background"
                 android:textColorLink="@color/cardview_light_background"
@@ -55,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/text_Test3"
-                android:textColor="@color/cardview_light_background"
+                android:textColor="@color/azuloscuro"
                 android:textColorHighlight="@color/cardview_light_background"
                 android:textColorHint="@color/cardview_light_background"
                 android:textColorLink="@color/cardview_light_background"
