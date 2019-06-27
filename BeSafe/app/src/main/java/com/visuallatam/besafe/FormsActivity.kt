@@ -9,9 +9,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.example.besafe.fragments.opcionesFragment
 import com.visuallatam.besafe.adapters.firestoreAdapter.FirestoreUsersAdapter
 import com.visuallatam.besafe.data.entities.FormQ
-import com.visuallatam.besafe.fragments.opcionesFragment
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentSnapshot
@@ -45,9 +45,6 @@ class FormsActivity : AppCompatActivity() {
         //setContentView(R.layout.opciones_fragment)
 
         showOpcionesFragment()
-
-
-
         addInfo()
         /**
         var recycler_view = findViewById<RecyclerView>(R.id.rv_forms)
@@ -178,11 +175,12 @@ class FormsActivity : AppCompatActivity() {
         })
     }
 
-    fun showOpcionesFragment(){
-        val transaction =  supportFragmentManager.beginTransaction()
+    fun showOpcionesFragment() {
+        val fragmentManager = supportFragmentManager
+        val transaction = fragmentManager.beginTransaction()
         val fragment = opcionesFragment()
-        transaction.add(fragment,"FRAGMENT1")
-            .commit()
+        transaction.add(R.id.fragment_container, fragment)
+        transaction.commit()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
